@@ -1,0 +1,511 @@
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+        <h1 class="text-primary">TOLGA'NIN WEB SİTESİNE HOŞ GELDİNİZ</h1>
+        <p><span id="age"></span> YAŞINDAYIM KOD YAZMAYI SEVİYORUM</p>
+        <a href="index.html">ANA SAYFA</a>
+    </div>
+        
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h3>BİLMECELER</h3>
+                <h5 id="toplam-bilmece"></h5>
+            </div>
+
+            <div class="col-sm-12">
+
+                <div id="accordion">
+                    
+                    
+                </div>
+                  
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>TOLGA'nın Websitesine Girdiğiniz İçin Teşekkürler</p>
+            <p>BAY BAY</p>
+            <img src="img/bye.gif" alt="">
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        let date = new Date()
+        let year = date.getFullYear()
+        var age = $("#age")
+        age.html(year - 2016)
+
+        var accordion = $("#accordion")
+
+        var bilmece = [
+            {
+                soru: 'Ne kanı var ne canı, beş tanedir parmağı.',
+                cevap: 'Eldiven'
+            },
+            {
+                soru: 'Bilmece mildirmece el üstünde kaydırmaca.',
+                cevap: 'sabun'
+            },
+            {
+                soru: 'Bilmece bildirmece dil üstünde kaydırmaca.',
+                cevap: 'dondurma'
+            },
+            {
+                soru: 'Uzundur ip deil ısırır köpek değil',
+                cevap: 'Yılan'
+            },
+
+
+            {
+                soru: 'Kanadı var kuş değil suda yüzer gemi değil kuyruğu var kedi değil Bil bakalım, bu nedir?',
+                cevap: 'Balık'
+            },
+            {
+                soru: 'Karam var, beyazım var. Küçük bir ağacım var. Ailem kalabalıktır. Bir dalda 100 kardeşim var.',
+                cevap: 'Üzüm'
+            },
+            {
+                soru: 'Soğuk adamın burnuyum.Toprağın altıdır yurdum.',
+                cevap: 'Havuç'
+            },
+            {
+                soru: 'Erken uyanmaktır işim.Mahallede çınlar sesim.',
+                cevap: 'Horoz'
+            },
+            {
+                soru: 'Al yanağı dala asmışlar.İçine şeker katmışlar.',
+                cevap: ' Elma'
+            },
+            {
+                soru: 'Ağaçlar benim evimdir.Yanaklarımdaki yemeğimdir.',
+                cevap: 'Sincap'
+            },
+            
+            {
+                soru: 'Ağır suya ne denir',
+                cevap: 'Buz'
+            },
+            {
+                soru: 'Ateş değil ama yanar, kanatları yok ama uçar, ayakları yok ama koşar.',
+                cevap: 'Güneş'
+            },  
+            {
+                soru: 'Öte lin lin, beri lin lin. Ayak üstü durur lin lin.',
+                cevap: 'Kapı'
+            },
+            {
+                soru: 'Da Vinci\'nin herkesten sakladığı mesleği nedir',
+                cevap: 'Vinç operatörü'
+            },
+            {
+                soru: 'Bodrum\'un serin sularında yüzmek istiyorum ne yapmalıyım',
+                cevap: 'Bodrum\'a gitmelisin'
+            },
+            {
+                soru: 'En komik kimdir',
+                cevap: 'Komedyenler'
+            },
+            {
+                soru: 'Şair Ömer, Çiftçi Mehmet\'e ne demiş',
+                cevap: 'Ben yazarım, sen biçersin'
+            },
+            {
+                soru: 'Son gülen kimdir',
+                cevap: 'Geç anlayandır'
+            },
+            {
+                soru: 'Masaya hangi örtü serilmez',
+                cevap: 'Bitki örtüsü'
+            },
+            {
+                soru: 'Van Gogh aslen nerelidir',
+                cevap: 'Van'
+            },
+            {
+                soru: 'Klimt bakkala girmiş, bakkalda Dali\'yi görmüş Dali\'ye ne demiş',
+                cevap: 'Bu Dali de kim'
+            },
+            {
+                soru: 'Dört tekerleği ve sinekleri olan nedir',
+                cevap: 'Çöp kamyonu'
+            },
+            {
+                soru: 'Kimin ayakları vardır ama asla yürüyemez',
+                cevap: 'Masa'
+            },
+            {
+                soru: 'Kuyruğu var canlı değil konuşur ama insan değil camı var ama pencere değil',
+                cevap: 'Televizyon'
+            },
+            {
+                soru: 'Kediler neden dört ayaklarının üstüne düşerler',
+                cevap: 'Beş ayakları olmadığı için dört ayak üstüne düşerler'
+            },
+            {
+                soru: 'Kaplumbağalar için en kötü durum nedir',
+                cevap: 'Sırtlarının kaşınması'
+            },
+            {
+                soru: 'Ateş olmayan yerde ne olmaz',
+                cevap: 'İtfaiye'
+            },
+            {
+                soru: 'Herkesin önünde şapka çıkarttığı kişi kimdir',
+                cevap: 'Berber'
+            },
+            {
+                soru: 'Altı canlı üstü cansız',
+                cevap: 'Kaplumbağa'
+            },
+            {
+                soru: 'Tay tay gider, üstüne de yeller eser. Ayağı takılırsa, seni yerlerde sürükler.',
+                cevap: 'At'
+            },
+            {
+                soru: 'Kolu var bacağı yok, dikdörtgeni vardır, karesi yok.',
+                cevap: 'Kapı'
+            },
+            {
+                soru: 'Gözlerime takarım, etrafıma bakarım',
+                cevap: 'Gözlük'
+            },
+            {
+                soru: 'En çok kardeşi olan meyve hangi meyvedir',
+                cevap: 'Üzüm'
+            },
+            {
+                soru: 'İz eder dizi dizi, alır gezdirir bizi.',
+                cevap: 'Ayaklarımız'
+            },
+            {
+                soru: 'Çat orada, çat burada, Çat kapı arkasında.',
+                cevap: 'Süpürge'
+            },
+            {
+                soru: 'Ne yersen orucun bozulmaz',
+                cevap: 'Dayak-Tokat'
+            },
+            {
+                soru: 'Anne kırkayağın en zor işi nedir',
+                cevap: 'Yavrularının ayaklarını yıkamak'
+            },
+            {
+                soru: 'Hangi macunun tadı güzeldir',
+                cevap: 'Lahmacun'
+            },
+            {
+                soru: 'İçinde bir akrep var, zarar vermeden dolanır.',
+                cevap: 'Saat'
+            },
+            {
+                soru: 'Bebekler hangi memeden süt ememez',
+                cevap: 'Kulak memesinden'
+            },
+            {
+                soru: 'Duvara çarpan araba ne yapar',
+                cevap: 'Durur'
+            }, 
+            {
+                soru: 'Zilim var ama kapım yok.',
+                cevap: 'Telefon'
+            },
+            {
+                soru: 'Hangi tasla su içilmez',
+                cevap: 'Ters tutulan tasla'
+            },
+            {
+                soru: 'Ağzı vardır konuşmaz, yatağı vardır ama hiç uyumaz.',
+                cevap: 'Akarsu'
+            },
+            {
+                soru: 'Yol kenarında bekler herkesi kontrol eder.',
+                cevap: 'Trafik polisi'
+            },
+            {
+                soru: 'Bakınca görünürsün, kaçarsan silinirsin.',
+                cevap: 'Ayna'
+            },
+            {
+                soru: 'Ben iki özleyenin arasında dururum. Onları istedikleri yerde konuştururum.',
+                cevap: 'Cep telefonu'
+            },
+            {
+                soru: 'Elsiz ayaksız kapı açarım.',
+                cevap: 'Anahtar'
+            },
+            {
+                soru: 'Bir sihirli fenerim, kibritsiz de yanarım.',
+                cevap: 'Ampul'
+            },
+            {
+                soru: 'Herkesin gitmekten korktuğu köy hangisidir',
+                cevap: 'Tahtalıköy'
+            },
+            {
+                soru: 'Yazları giyinir, kışları soyunur.',
+                cevap: 'Ağaç'
+            },
+            {
+                soru: 'Kirpiler nasıl uyur',
+                cevap: 'Diken üstünde'
+            },
+            {
+                soru: 'Hayır sever kişi kime denir',
+                cevap: 'Herkese hayır diyenlere'
+            },
+            {
+                soru: 'Mantarlar niye şemsiye şeklindedir',
+                cevap: 'Yağmur yağan yerlerde yaşadıkları için.'
+            },
+            {
+                soru: 'Kekeleyenler ne zaman bu sorunu yener',
+                cevap: 'Konuşmadıkları zaman'
+            },
+            {
+                soru: 'Kurbağalar niye mayo giymezler',
+                cevap: 'Zıpladıklarında düşmesin diye'
+            },
+            {
+                soru: 'Şehirler, köyler gezerim ama bir adım bile hareket etmem. Ben neyim',
+                cevap: 'Yol'
+            },
+            {
+                soru: 'Şişman ablam yer altında, dalları yer üstünde.',
+                cevap: 'Havuç'
+            },
+            {
+                soru: 'Gökyüzünden düşmüş kartopu, dört ayağı da eğri.',
+                cevap: 'Tavşan'
+            },
+            {
+                soru: 'Ev ikiye yarılmış, etrafa boncuklar saçılmış.',
+                cevap: 'Bezelye'
+            },
+            {
+                soru: 'Buzda geyik yanağı yatar.',
+                cevap: 'Ay'
+            },
+            {
+                soru: 'Kerem oyun oynamayı çok seviyor ama oyun dışında başka bir şey düşünemiyor neden',
+                cevap: 'Çünkü aklı fikri oyunda'
+            },
+            {
+                soru: 'Birisi uçar, birisi içer, birisi biter.',
+                cevap: 'Yağış, yer, bitki'
+            },
+            {
+                soru: 'Birisi uçar, birisi içer, birisi biter.',
+                cevap: 'Satranç'
+            },
+            {
+                soru: 'Yuvarlak sandık içinde kendi kendine meydana gelen altın yatar.',
+                cevap: 'Beyin'
+            },
+            {
+                soru: 'On iki oğlu, dört kızı var.',
+                cevap: 'Yıl'
+            },
+            {
+                soru: 'Yeşil montlu, kırmızı elbiseli, kahverengi düğmeli.',
+                cevap: 'Karpuz'
+            },
+            {
+                soru: 'Aşağı iner güle güle. Yukarı çıkar ağlaya ağlaya.',
+                cevap: 'Kuyu kovası'
+            },
+            {
+                soru: 'Uzun uzun uzanır, senede bir bezenir.',
+                cevap: 'Ağaç'
+            },
+            {
+                soru: 'Gece çıkar göğe, sabah saklanır bir yere. Gelirse aydınlatır, tam olursa toparlanır.',
+                cevap: 'Ay'
+            },
+            {
+                soru: 'Annemin kız kardeşinin kızı benim neyim olur',
+                cevap: 'Kuzen'
+            },
+            {
+                soru: '38\'in 40 fazlasının 2 eksiği kaçtır',
+                cevap: '76'
+            },
+            {
+                soru: 'O kadar kırılgan ki ismini söylediğinde bile kırılıyor',
+                cevap: 'Sessizlik'
+            },
+            {
+                soru: 'Hangi yapının en çok hikayesi vardır',
+                cevap: 'Kütüphane'
+            },
+             {
+                soru: 'Mideniz boşsa kaç tane muz yiyebilirsiniz',
+                cevap: 'Sadece bir ondan sonra artık boş değil.'
+            },
+
+            {
+                soru: 'Altıyı nasıl tek sayı yaparsınız',
+                cevap: 'S harfini kaldırın ve romen rakamlarıyla 9 olan IXö\'i elde edin.'
+            },
+             {
+                soru: 'Seni ne genç yapar',
+                cevap: '\'\'nç\'\' harfleri'
+            },
+            {
+                soru: 'Bilmecelerin en zoru hangi bilmecedir',
+                cevap: 'Olmayan bilmece'
+            },
+            {
+                soru: 'Terlemeyen meslek hangi meslektir',
+                cevap: 'Noter'
+            },  
+            {
+                soru: 'Evi olmayan nerede kalır',
+                cevap: 'Otel'
+            }, 
+            {
+                soru: 'Adamlar hangi programı sevmez',
+                cevap: 'Virüs'
+            },
+            {
+                soru: 'Hastalara iyi gelen şey',
+                cevap: 'Çorba'
+            },
+            {
+                soru: 'Dünyada en hızlı giden araç hangisidir',
+                cevap: 'Jet uçağı'
+            },
+            {
+                soru: 'Titamyum kırılırmı',
+                cevap: 'Kırılır'
+            },
+            {
+                soru: 'Titamyum ne ile kırılır',
+                cevap: 'Delici'
+            },
+            {
+                soru: 'Kurban bayramında ne kasilir',
+                cevap: 'Kurban'
+            },
+            {
+                soru: 'Dünyada en güzel şey nedir',
+                cevap: 'Aşk-Sevgi'
+            },
+            {
+                soru: 'Dünya\'daki en önenli şey nedir',
+                cevap: 'SU'
+            },
+            {
+                soru: 'Evler\'in tek aşçı\'sı kimdir',
+                cevap: 'Anneler'
+            },
+            {
+                soru: 'Matematiğin temel sayısı hangi sayıdır',
+                cevap: '0\'dır'
+            },
+            {
+                soru: 'Su şişeleri ne işe yarar',
+                cevap: 'Su içmek için'
+            },
+            {
+                soru: 'Misafirler ne yer',
+                cevap: 'Bulduğunu'
+            },
+            {
+                soru: 'Misafirliğe giderken en çok alınan tatlı',
+                cevap: 'baklava'
+            },
+            {
+                soru: 'Yerde turuncu minare',
+                cevap: 'havuç'
+            },
+            {
+                soru: 'Peçete neden yapılır',
+                cevap: 'Ağaç\'tan yapılır'
+            },
+            {
+                soru: 'Kapılar neden şifrelidir',
+                cevap: 'Hırsız girmesin diye'
+            },
+            {
+                soru: 'Ağaçlar\'ın işi nedir',
+                cevap: 'Doğayı korumak'
+            },
+            {
+                soru: 'Dalda durur elde durmaz',
+                cevap: 'Kuş'
+            },
+            {
+                soru: 'Jöle ne işe yarar',
+                cevap: 'Saçı şekillendirmek için'
+            },
+            {
+                soru: 'Hangi karnede zayıf olmaz',
+                cevap: 'Salık karnesinde'
+            },
+            
+        ]
+        
+
+
+
+
+
+
+
+
+
+
+
+        for (let index = 0; index < bilmece.length; index++) {
+            const element = bilmece[index];
+            
+            accordion.append(`
+                <div class="card">
+                    <div class="card-header" id="heading${index}">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse${index}" aria-expanded="true" aria-controls="collapse${index}">
+                                ${element.soru}
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#accordion">
+                        <div class="card-body">
+                            Cevap:  ${element.cevap}
+                        </div>
+                    </div>
+                </div>
+            `)
+        }
+
+
+        let toplam_bilmece = $("#toplam-bilmece")
+        toplam_bilmece.html("Toplam: " + bilmece.length)
+        
+    </script>
+</body>
+</html>
